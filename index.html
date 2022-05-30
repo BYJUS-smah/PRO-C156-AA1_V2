@@ -17,7 +17,7 @@
     <a-scene background="color:#026F90" physics>
       <a-entity id="look" look-controls camera position="0 2 20"></a-entity>
 
-      <!--Asset Management-->
+      <!--Gestión de activos-->
       <a-assets timeout="10000">
         <a-asset-item
           id="terrainMap"
@@ -31,7 +31,7 @@
         
       </a-assets>
 
-      <!-- Terrain  -->
+      <!-- Terreno  -->
       <a-entity
         id="terrain"
         gltf-model="#terrainMap"
@@ -44,7 +44,7 @@
       >
       </a-entity>
 
-      <!-- Plane -->
+      <!-- Avión -->
       <a-entity
         id="plane_model"
         gltf-model="#plane"
@@ -57,19 +57,19 @@
       >
       </a-entity>
 
-      <!-----------------------------------Game Timer and Score------------------------------------------>
+      <!-----------------------------------Temporizador y puntaje------------------------------------------>
       <a-entity id="header" position="1 -4 0">
-        <!-- Title -->
+        <!-- Título -->
         <a-entity
           position="-28.5 21.5 0"
-          text="font: exo2bold; align: center; width: 40; color: black; value: VIRTUAL FLIGHT"
+          text="font: exo2bold; align: center; width: 40; color: black; value: VUELO VIRTUAL"
         ></a-entity>
 
-        <!-- Timer -->
+        <!-- Temporizador -->
         <a-entity position="-23.5 19.3 0">
           <a-entity
             position="-1.5 0.07 0"
-            text="font: aileronsemibold; width: 12; color: black; value: TIME\nREMAINING"
+            text="font: aileronsemibold; width: 12; color: black; value: Tiempo\nrestante"
           ></a-entity>
           <a-entity
             id="timer"
